@@ -20,9 +20,9 @@
                     <p>If you are a developer building with Apiture, the answers to most questions can be found in the docs -- If you can't find an answer to your question in the docs, file a Support ticket via your Dashboard account.</p>
                 </div>
             </section>
-            <div class="graphic">
+            <!-- <div class="graphic">
                 <img id='support-gif' src="public/support.gif" alt="Help and support">
-            </div>
+            </div> -->
         </div>
 
     </div>
