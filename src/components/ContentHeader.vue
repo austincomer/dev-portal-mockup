@@ -14,7 +14,7 @@
             <h2>{{ h2Copy }}</h2>
         </div>
         <div v-if="hasGraphic" class="graphic">
-            <img id='teamwork-gif' src="public/team-work.gif" alt="Team work">
+            <lottie-player id='teamwork-gif' src="https://assets2.lottiefiles.com/packages/lf20_w7x9i6ag.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
         </div>
        
     </div>

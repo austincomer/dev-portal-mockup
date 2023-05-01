@@ -9,8 +9,6 @@ import { RouterLink, RouterView } from 'vue-router';
             }
         }
     }
-
-console.log(document.documentElement.clientWidth)
 </script>
 
 
