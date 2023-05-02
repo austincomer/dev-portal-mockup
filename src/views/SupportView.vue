@@ -9,7 +9,7 @@
 
         <ContentHeader 
             h1Copy="Apiture Help & Support"
-            h2Copy="We're here to help with your our integrations. Let us know what you need and we'll do our best to support you."
+            h2Copy="We're here to help you with our integrations. Let us know what you need and we'll do our best to support you."
             :hasGraphic="false"
         />
 
