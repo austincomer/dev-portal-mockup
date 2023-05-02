@@ -1,5 +1,5 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router';
+    import { RouterLink, RouterView } from 'vue-router';
 
     export default {
         name: 'NavBar',
@@ -14,14 +14,14 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
     <div class="navbar-container">
-        <!-- <RouterLink class="home-link" to="/"> -->
-            <RouterLink class="navbar-header" to="/">
-                <h1>APITURE <span id="docs-text">Docs</span></h1>
+            <div class="navbar-header">
+                <RouterLink class="home-nav" to="/">
+                    <h1>APITURE <span id="docs-text">Docs</span></h1>
+                </RouterLink>
                 <div class="open-nav-icon" @click='isActive = !isActive'>
                     <v-icon name="co-hamburger-menu" scale="1.5" />
                 </div>
-            </RouterLink>
-        <!-- </RouterLink> -->
+            </div>
         <aside :class="{'navbar-active': isActive}">
             <div class="close-nav-icon" @click='isActive = !isActive'>
                 <v-icon name="io-close-outline" scale="1.5" />
@@ -56,6 +56,9 @@ import { RouterLink, RouterView } from 'vue-router';
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .home-nav {
         color: #333333;
         text-decoration: none;
     }
