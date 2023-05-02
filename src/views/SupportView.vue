@@ -21,7 +21,7 @@
                 </div>
             </section>
             <div class="graphic">
-                <lottie-player id='support-gif' src="https://assets4.lottiefiles.com/packages/lf20_r2ZVtcRObK.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
+                <iframe id='support-animation' src="https://embed.lottiefiles.com/animation/135895" style="pointer-events: none;"></iframe>
             </div>
         </div>
 
@@ -89,9 +89,10 @@
         display: flex;
     }
 
-    #support-gif {
-        height: 100%;
-        width: 100%;
+    #support-animation {
+        border: none;
+        min-height: 400px;
+        min-width: 400px;
         object-fit: contain;
         align-self: center;
     }
@@ -115,6 +116,11 @@
             padding: 60px 50px;
             flex-direction: row;
         }
+
+        #support-animation {
+            min-height: 300px;
+            min-width: 300px;
+        }
     }
 
     @media only screen and (min-width: 1280px) {
@@ -124,6 +130,11 @@
 
         .graphic {
             height: 100%;
+        }
+
+        #support-animation {
+            min-height: 400px;
+            min-width: 400px;
         }
     }
 

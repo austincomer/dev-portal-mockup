@@ -14,9 +14,8 @@
             <h2>{{ h2Copy }}</h2>
         </div>
         <div v-if="hasGraphic" class="graphic">
-            <lottie-player id='teamwork-gif' src="https://assets2.lottiefiles.com/packages/lf20_w7x9i6ag.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+            <iframe id='teamwork-animation' src="https://embed.lottiefiles.com/animation/99692"  style="pointer-events: none;"></iframe>
         </div>
-       
     </div>
 </template>
 
@@ -56,8 +55,9 @@ h2 {
     max-height: 350px;
 }
 
-#teamwork-gif {
-    height: 100%;
+#teamwork-animation {
+    border: none;
+    height: 250px;
     width: 100%;
     object-fit: contain;
 }
@@ -103,6 +103,11 @@ h2 {
         height: 100%;
     }
 
+    #teamwork-animation {
+    height: 100%;
+}
+
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -119,7 +124,7 @@ h2 {
 
 @media only screen and (min-width: 1440px) {
     .content-header {
-        padding: 20px 180px;
+        padding: 50px 180px;
         flex-direction: row;
     }
 
